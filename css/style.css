@@ -250,3 +250,55 @@ header ul a:hover {
 	font-size: 16px;
 	font-family: latolight;
 }
+/*Features*/
+
+/*Introducing*/
+.introducing {
+	background-color: #f7f7f7;
+	padding: 90px 0 0 0;
+}
+
+.introducing__iphone {
+	font-size: 0px;
+}
+
+.introducing__app {
+	padding: 67px 0 0 80px;
+}
+
+.introducing__app__title {
+	font-size: 18px;
+	color: #000000;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.introducing__app__title:after {
+	content: "";
+	height: 1px;
+	width: 88px;
+	background-color: #f57365;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+}
+
+.introducing__app__text {
+	display: inline-block;
+	font-size: 16px;
+	color: #979797;
+	font-family: latolight;
+	margin-top: 10px;
+}
+
+.introducing__app__download {
+	display: inline-block;
+	margin: 10px 10px 0 0;
+	-moz-transition: all linear 0.5s;
+	-o-transition: all linear 0.5s;
+	-webkit-transition: all linear 0.5s;
+}
+
+.introducing__app__download:hover {
+	opacity: 0.6;
+}
