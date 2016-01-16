@@ -242,7 +242,8 @@ header ul a:hover {
 	background-color: #f57365;
 	position: absolute;
 	bottom: -10px;
-	left: 147px;
+	left: 50%;
+	margin-left: -44px;
 }
 
 .features__item__text {
@@ -301,4 +302,96 @@ header ul a:hover {
 
 .introducing__app__download:hover {
 	opacity: 0.6;
+}
+/*Introducing*/
+
+/*Cuisines*/
+.cuisines__title {
+	font-size: 18px;
+	text-transform: uppercase;
+	position: relative;
+	text-align: center;
+	margin: 75px 0 35px 0;
+}
+
+.cuisines__title:after {
+	content: "";
+	height: 1px;
+	width: 88px;
+	background-color: #f57365;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	margin-left: -44px;
+}
+
+.cuisines__item {
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: inline-block;
+	height: 225px;
+	background-position: center center;
+	text-align: center;
+	-webkit-box-shadow: inset 0px 0px 96px 50px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 96px 50px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 96px 50px rgba(0,0,0,0.5);
+	-moz-transition: all linear 0.5s;
+	-o-transition: all linear 0.5s;
+	-webkit-transition: all linear 0.5s;
+}
+
+.cuisines__item:hover {
+	-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.5);
+}
+
+.one {
+	background-image: url(../img/italian.jpg);
+}
+
+.two {
+	background-image: url(../img/indian.jpg);
+}
+
+.three {
+	background-image: url(../img/french.jpg);
+}
+
+.four {
+	background-image: url(../img/steakhouse.jpg);
+}
+
+.five {
+	background-image: url(../img/seafood.jpg);
+}
+
+.six {
+	background-image: url(../img/sushi.jpg);
+}
+
+.seven {
+	background-image: url(../img/mexican.jpg);
+}
+
+.eight {
+	background-image: url(../img/chinese.jpg);
+}
+
+.cuisines__number {
+	font-family: Times New Roman, Arial, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 77px;
+	display: inline-block;
+	color: #ffffff;
+}
+
+.cuisines__name {
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-top: 6px;
 }
