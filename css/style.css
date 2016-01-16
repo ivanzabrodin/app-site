@@ -395,3 +395,28 @@ header ul a:hover {
 	color: #ffffff;
 	margin-top: 6px;
 }
+/*Cuisines*/
+
+/*Numbers*/
+.numbers__item {
+	text-align: center;
+}
+
+.numbers__item__number {
+	font-size: 36px;
+	display: inline-block;
+	margin-top: 43px;
+}
+
+.numbers__item__text {
+	font-family: latolight;
+	font-size: 16px;
+	color: #424242;
+	display: inline-block;
+	margin-bottom: 55px;
+}
+
+
+
+
+/*Numbers*/
