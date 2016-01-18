@@ -1,0 +1,130 @@
+/*
+    anythingSlider v1.0
+    
+    By Chris Coyier: http://css-tricks.com
+    with major improvements by Doug Neiner: http://pixelgraphics.us/
+    based on work by Remy Sharp: http://jqueryfordesigners.com/
+*/
+
+.anythingSlider {
+    position: relative;
+    width: 1000px;
+    height: 320px;
+    left: 50%;
+    margin-left: -500px;
+}
+
+.anythingSlider .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    width: 1000px;
+    height: 310px;
+    margin-top: 0;
+    border-radius: 9px;
+    margin-top: 65px;
+}
+
+.anythingSlider .wrapper ul {
+	width: 9999px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+.anythingSlider ul li {
+    display: block;
+    float: left;
+    width: 1000px;
+    height: 320px;
+    padding: 0;
+    color: white;
+}
+
+.anythingSlider .forward                { display: none; }
+.anythingSlider .back                   { display: none; }
+
+.anythingSlider .forward:hover          { display: none; }
+.anythingSlider .back:hover             { display: none; }
+
+#thumbNav { 
+	position: relative; 
+	top: 365px; 
+	text-align: center; 
+}
+
+#thumbNav a { 
+	background-color: #796d79;
+	display: inline-block; 
+	height: 10px;
+	width: 10px;
+	margin: 0 5px 0 0;
+	repeat-x; 
+	color: transparent; 
+	-moz-border-radius: 5px;  
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+}
+
+#thumbNav a:hover {
+    background-image: #ffffff;
+}
+
+#thumbNav a.cur {
+    background: #ffffff;
+}
+
+#start-stop {
+	display: none;
+}
+
+#start-stop.playing {
+    display: none;
+}
+
+#start-stop:hover {
+    display: none;
+}
+
+/*
+  Prevents
+*/
+.anythingSlider .wrapper ul ul          { position: static; margin: 0; background: none; overflow: visible; width: auto; border: 0; }
+.anythingSlider .wrapper ul ul li       { float: none; height: auto; width: auto; background: none; }
+
+@media screen and (max-width: 700px) {
+    .anythingSlider {
+        width: 500px;
+        height: 320px;
+        margin-left: -250px;
+    }
+
+    .anythingSlider .wrapper {
+        width: 500px;
+        margin-top: 45px;
+    }
+
+    .anythingSlider ul li {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .anythingSlider {
+        width: 320px;
+        height: 320px;
+        margin-left: -160px;
+    }
+
+    .anythingSlider .wrapper {
+        width: 320px;
+        margin-top: 45px;
+    }
+
+    .anythingSlider ul li {
+        width: 320px;
+    }
+}

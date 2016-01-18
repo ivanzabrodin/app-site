@@ -136,6 +136,87 @@ ul.list-inline > li {
 }
 /*Grid*/
 
+/*Menu*/
+.cont {
+	position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    -webkit-transition:  left 0.4s ease-in-out;
+    -moz-transition:  left 0.4s ease-in-out;
+    -ms-transition:  left 0.4s ease-in-out;
+    -o-transition:  left 0.4s ease-in-out;
+    transition:  left 0.4s ease-in-out;
+}
+
+.cont.open-sidebar {
+    left: 240px;
+}
+
+#sidebar {
+	display: inline-block;
+    position: absolute;
+    left: -240px;
+    width: 240px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#sidebar ul li {
+    margin: 0;
+}
+
+#sidebar ul li a {
+	background-color: #23c52e;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid green;
+    -webkit-transition:  background 0.3s ease-in-out;
+    -moz-transition:  background 0.3s ease-in-out;
+    -ms-transition:  background 0.3s ease-in-out;
+    -o-transition:  background 0.3s ease-in-out;
+    transition:  background 0.3s ease-in-out;
+}
+
+#sidebar ul li:hover a {
+    background-color: #23c550;
+}
+
+#sidebar-toggle {
+    background: #23c52e;
+    border-radius: 3px;
+    display: block;
+    position: relative;
+    padding: 10px 7px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#sidebar-toggle .bar{
+    display: block;
+    width: 18px;
+    margin-bottom: 3px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+#sidebar-toggle .bar:last-child{
+     margin-bottom: 0;
+     float: left;
+}
+/*Menu*/
 /*Header*/
 header {
 	background-image: url(../img/header.jpg);
@@ -305,6 +386,38 @@ header ul a:hover {
 }
 /*Introducing*/
 
+/*Reviews*/
+.slider {
+	background-color: #4a3949;
+	height: 460px;
+	background-image: url(../img/bg-reviews.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    text-align: center;  
+}
+
+.slider__photo {
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+.slider__text {
+	display: inline-block;
+	font-size: 30px;
+	font-family: latohairline;
+	width: 950px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.slider__author {
+	display: block;
+	font-size: 18px;
+	font-family: latohairline;
+	text-align: center;
+}
+/*Reviews*/
+
 /*Cuisines*/
 .cuisines__title {
 	font-size: 18px;
@@ -342,9 +455,9 @@ header ul a:hover {
 }
 
 .cuisines__item:hover {
-	-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.5);
-	-moz-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.5);
-	box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.5);
 }
 
 .one {
@@ -431,3 +544,5 @@ footer {
 	display: inline-block;
 	margin: 40px 0;
 }
+/*Footer*/
+
