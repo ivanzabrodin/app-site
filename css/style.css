@@ -344,6 +344,10 @@ header ul a:hover {
 	font-size: 0px;
 }
 
+.introducing__img__mini {
+	display: none;
+}
+
 .introducing__app {
 	padding: 67px 0 0 80px;
 }
@@ -546,3 +550,33 @@ footer {
 }
 /*Footer*/
 
+/*Width 1220px*/
+@media screen and (max-width: 1220px) {
+	.container {
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	/*Introducing*/
+	.introducing__img {
+		display: none;
+	}
+
+	.introducing__img__mini {
+		display: inline-block;
+	}
+	/*Introducing*/
+
+	/*Reviews*/
+	.slider__text {
+		width: auto;
+	}
+	/*Reviews*/
+
+	/*Cuisines*/
+	.cuisines__name {
+		font-size: 25px;
+	}
+	/*Cuisines*/
+}

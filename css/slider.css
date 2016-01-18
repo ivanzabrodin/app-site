@@ -95,24 +95,24 @@
 .anythingSlider .wrapper ul ul          { position: static; margin: 0; background: none; overflow: visible; width: auto; border: 0; }
 .anythingSlider .wrapper ul ul li       { float: none; height: auto; width: auto; background: none; }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1020px) {
     .anythingSlider {
-        width: 500px;
+        width: 900px;
         height: 320px;
-        margin-left: -250px;
+        margin-left: -450px;
     }
 
     .anythingSlider .wrapper {
-        width: 500px;
+        width: 900px;
         margin-top: 45px;
     }
 
     .anythingSlider ul li {
-        width: 500px;
+        width: 900px;
     }
 }
 
-@media screen and (max-width: 550px) {
+/*@media screen and (max-width: 550px) {
     .anythingSlider {
         width: 320px;
         height: 320px;
@@ -127,4 +127,4 @@
     .anythingSlider ul li {
         width: 320px;
     }
-}
+}*/
