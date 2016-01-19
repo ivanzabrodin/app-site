@@ -217,6 +217,7 @@ ul.list-inline > li {
      float: left;
 }
 /*Menu*/
+
 /*Header*/
 header {
 	background-image: url(../img/header.jpg);
@@ -230,11 +231,13 @@ header {
 }
 
 header ul a {
+	display: inline-block;
 	font-size: 14px;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #ffffff;
 	margin-left: 34px;
+	margin-top: 23px;
 	-moz-transition: all linear 0.5s;
 	-o-transition: all linear 0.5s;
 	-webkit-transition: all linear 0.5s;
@@ -579,4 +582,10 @@ footer {
 		font-size: 25px;
 	}
 	/*Cuisines*/
+}
+
+@media screen and (max-width: 400px) {
+	.cuisines .column3 {
+		width: 100%;
+	}
 }
