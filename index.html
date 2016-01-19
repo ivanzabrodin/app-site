@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Fudi</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -9,57 +10,66 @@
 </head>
 <body>
 
+	<nav id="menu">
+			<a href="#features" class="menu__item smoothScroll">Features</a>
+			<a href="#intro" class="menu__item smoothScroll">Introducing</a>
+			<a href="#reviews" class="menu__item smoothScroll">Reviews</a>
+			<a href="#cuisines" class="menu__item smoothScroll">Cuisines</a>
+			<span class="del"></span>
+			<a href="" class="menu__item">Log In</a>
+			<a href="" class="menu__item">Register</a>
+	</nav>
 
-
-	<!-- Header -->
-	<header>
-		<div class="container">
-			<div class="row">
-				<a href="#" class="header__logo column2"><img src="img/logo.png" alt="Logo"></a>
-				<ul class="column10 list-inline pull-right text-right">
-					<li><a href="#features" class = "smoothScroll">Features</a></li>
-					<li><a href="#intro" class = "smoothScroll">Intro</a></li>
-					<li><a href="#reviews" class = "smoothScroll">Reviews</a></li>
-					<li><a href="#cuisines" class = "smoothScroll">Cuisines</a></li>
-				</ul>
-			</div>
-			<div class="row">
-				<div class="header__body">
-					<h3 class="header__suptitle">Find your Favorite</h3>
-					<h1 class="header__title">Recipes</h1>
-					<a href="#how" class="header__button smoothScroll">Get Started</a>
-					<span class="header__text">Or send us your own recipes and <a href="" class="header__text__link">Get rewarded</a>!</span>
+	<main id="panel">
+		<!-- Header -->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="toggle-button pull-left">☰</div>
+					<a href="#" class="header__logo column12"><img src="img/logo.png" alt="Logo"></a>
+					<ul class="menu list-inline pull-right text-right">
+						<li><a href="#features" class = "smoothScroll">Features</a></li>
+						<li><a href="#intro" class = "smoothScroll">Intro</a></li>
+						<li><a href="#reviews" class = "smoothScroll">Reviews</a></li>
+						<li><a href="#cuisines" class = "smoothScroll">Cuisines</a></li>
+					</ul>
+				</div>
+				<div class="row">
+					<div class="header__body">
+						<h3 class="header__suptitle">Find your Favorite</h3>
+						<h1 class="header__title">Recipes</h1>
+						<a href="#features" class="header__button smoothScroll">Get Started</a>
+						<span class="header__text">Or send us your own recipes and <a href="" class="header__text__link">Get rewarded</a>!</span>
+					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	<!-- Header -->
-
-	
+		</header>
+		<!-- Header -->
 
 	<!-- Features -->
-	<div class="container" id="features">
-		<div class="row">
-			<div class="features__item column4">
-				<img src="img/burger.png" alt="" class="features__item__img">
-				<span class="features__item__title">Get Inspired</span>
-				<span class="features__item__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</span>
-			</div>
-			<div class="features__item column4">
-				<img src="img/money.png" alt="" class="features__item__img">
-				<span class="features__item__title">Get Rewarded</span>
-				<span class="features__item__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</span>
-			</div>
-			<div class="features__item column4">
-				<img src="img/cook.png" alt="" class="features__item__img">
-				<span class="features__item__title">Get Social</span>
-				<span class="features__item__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</span>
+	<div class="features" id="features">
+		<div class="container">
+			<div class="row">
+				<div class="features__item column4">
+					<img src="img/burger.png" alt="" class="features__item__img">
+					<span class="features__item__title">Get Inspired</span>
+					<span class="features__item__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</span>
+				</div>
+				<div class="features__item column4">
+					<img src="img/money.png" alt="" class="features__item__img">
+					<span class="features__item__title">Get Rewarded</span>
+					<span class="features__item__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</span>
+				</div>
+				<div class="features__item column4">
+					<img src="img/cook.png" alt="" class="features__item__img">
+					<span class="features__item__title">Get Social</span>
+					<span class="features__item__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</span>
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- Features -->
-
-
+	</main>
 
 	<!-- Introducing -->
 	<div class="introducing" id="intro">
@@ -67,8 +77,6 @@
 			<div class="row">
 				<div class="introducing__iphone column6">
 					<img src="img/iphone.jpg" class="introducing__img" alt="iPhone">
-					<img src="img/iphone-mini.jpg" class="introducing__img__mini" alt="iPhone">
-					<img src="img/iphone-mini-mini.jpg" class="introducing__img__minimini" alt="iPhone">
 				</div>
 				<div class="introducing__app column6">
 					<h3 class="introducing__app__title">Introducing the Fudi App</h3>
@@ -84,8 +92,6 @@
 		</div>
 	</div>
 	<!-- Introducing -->
-
-
 
 	<!-- Reviews -->
 	<div class="slider" id="slider">
@@ -115,12 +121,10 @@
 	</div>
 	<!-- Reviews -->
 
-
-
 	<!-- Cuisines -->
-	<div class="cuisines">
+	<div class="cuisines" id="cuisines">
 		<div class="row">
-			<h3 class="cuisines__title column12" id="cuisines">Browse by cuisines</h3>
+			<h3 class="cuisines__title column12">Browse by cuisines</h3>
 		</div>
 		<div class="row">
 			<div class="cuisines__item one column3">
@@ -161,8 +165,6 @@
 	</div>
 	<!-- Cuisines -->
 
-
-
 	<!-- Numbers -->
 	<div class="numbers">
 		<div class="container">
@@ -196,8 +198,6 @@
 	</div>
 	<!-- Numbers -->
 
-
-
 	<!-- Footer -->
 	<footer>
 		<div class="container">
@@ -209,8 +209,6 @@
 		</div>
 	</footer>
 	<!-- Footer -->
-
-
 
 	<script src = "js/jquery-2.2.0.min.js"></script>
 	<script src = "js/jquery.anythingslider.js"></script>

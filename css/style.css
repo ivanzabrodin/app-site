@@ -1,4 +1,4 @@
-Fonts*/
+/*Fonts*/
 @font-face {
     font-family: 'latobold';
     src: url('../fonts/lato-bold-webfont.eot');
@@ -142,32 +142,72 @@ ul.list-inline > li {
 
 /*Menu*/
 .slideout-menu {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  width: 256px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  display: none;
+	  position: fixed;
+	  left: 0;
+	  top: 0;
+	  bottom: 0;
+	  right: 0;
+	  z-index: 0;
+	  width: 200px;
+	  overflow-y: auto;
+	  -webkit-overflow-scrolling: touch;
+	  display: none;
 }
 
 .slideout-panel {
-  position:relative;
-  z-index: 1;
-  will-change: transform;
+	  position:relative;
+	  z-index: 1;
+	  will-change: transform;
 }
 
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
-  overflow: hidden;
+	  overflow: hidden;
 }
 
 .slideout-open .slideout-menu {
-  display: block;
+  	display: block;
+}
+
+.toggle-button {
+	margin: 0 0 0 20px;
+	font-size: 40px;
+	color: #ffffff;
+}
+
+#menu {
+	background-color: #2d2d2d;
+	padding-top: 40px;
+}
+
+.menu__item {
+	text-decoration: none;
+	color: #ffffff;
+	list-style-type: none;
+	display: inline-block;
+	width: 200px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px 0 10px 20px;
+	font-size: 20px;
+	font-family: latohairline;
+	-moz-transition: all linear 0.5s;
+	-o-transition: all linear 0.5s;
+	-webkit-transition: all linear 0.5s;
+}
+
+.menu__item:hover {
+	background-color: #5f5f5f;
+}
+
+.del {
+	display: inline-block;
+	height: 1px;
+	width: 180px;
+	margin: 10px 0 10px 10px;
+	background-color: #ffffff;
 }
 /*Menu*/
 
@@ -183,6 +223,10 @@ header {
 	-webkit-box-shadow: inset 0px -150px 50px 0px rgba(0,0,0,0.36);
 	-moz-box-shadow: inset 0px -150px 50px 0px rgba(0,0,0,0.36);
 	box-shadow: inset 0px -150px 50px 0px rgba(0,0,0,0.36);
+}
+
+.toggle-button {
+	display: none;
 }
 
 header ul a {
@@ -304,14 +348,6 @@ header ul a:hover {
 
 .introducing__iphone {
 	font-size: 0px;
-}
-
-.introducing__img__mini {
-	display: none;
-}
-
-.introducing__img__minimini {
-	display: none;
 }
 
 .introducing__app {
@@ -538,27 +574,17 @@ footer {
 
 /*Width 1020px*/
 @media screen and (max-width: 1020px) {
-	/*Introducing*/
 	.introducing__img {
-		display: none;
+		width: 430px;
 	}
 
-	.introducing__img__mini {
-		display: inline-block;
-	}
-	/*Introducing*/
-
-	/*Reviews*/
 	.slider__text {
 		width: auto;
 	}
-	/*Reviews*/
 
-	/*Cuisines*/
 	.cuisines__name {
 		font-size: 25px;
 	}
-	/*Cuisines*/
 }
 /*Width 1020px*/
 
@@ -570,12 +596,8 @@ footer {
 		padding: 0;
 	}
 
-	.introducing__img__mini {
-		display: none;
-	}
-
-	.introducing__img__minimini {
-		display: inline-block;
+	.introducing__img {
+		width: 320px;
 	}
 }
 /*Width 920px*/
@@ -615,17 +637,90 @@ footer {
 
 
 /*Width 720px*/
-@media screen and (max-width: 720px) {
-	
+@media screen and (max-width: 768px) {
+	header {
+		-webkit-background-size: auto;
+		background-size: auto;
+		background-position: center center;
+		padding: 21px 0 100px 0;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.toggle-button {
+		display: inline-block;
+	}
+
+	header .row {
+		text-align: center;
+	}
+
+	.header__logo {
+		margin-left: -25px;
+	}
+
+	.features__item__title {
+		font-size: 16px;
+	}
+
+	.features__item__text {
+
+	}
+
+	.cuisines .column3 {
+		width: 100%;
+	}
+
+	.cuisines__number {
+		font-size: 18px;
+	}
+
+	.cuisines__name {
+		font-size: 40px;
+	}
+
+	.numbers .column3 {
+		width: 50%
+	}
 }
 /*Width 840px*/
 
 
 
-/*Width 400px*/
-@media screen and (max-width: 400px) {
-	.cuisines .column3 {
-		width: 100%;
+@media screen and (max-width: 500px) {
+	.slider__text {
+		font-size: 20px;
+	}
+
+	.slider__author {
+		font-size: 15px;
 	}
 }
-/*Width 400px
+
+
+
+/*Width 450px*/
+@media screen and (max-width: 450px) {
+	.header__suptitle {
+		font-size: 32px;
+	}
+
+	.header__title {
+		font-size: 80px;
+	}
+
+	.features .column4 {
+		width: 100%;
+	}
+
+	.features__item {
+		padding: 0;
+	}
+
+	.features__item__img {
+		margin-top: 50px;
+	}
+}
+/*Width 450px*/
