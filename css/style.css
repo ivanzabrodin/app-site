@@ -1,4 +1,4 @@
-/*Fonts*/
+Fonts*/
 @font-face {
     font-family: 'latobold';
     src: url('../fonts/lato-bold-webfont.eot');
@@ -64,6 +64,8 @@
 
 }
 /*Fonts*/
+
+
 
 /*Grid*/
 .column1 {  width: 8.33%;   }
@@ -136,87 +138,40 @@ ul.list-inline > li {
 }
 /*Grid*/
 
+
+
 /*Menu*/
-.cont {
-	position: relative;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    -webkit-transition:  left 0.4s ease-in-out;
-    -moz-transition:  left 0.4s ease-in-out;
-    -ms-transition:  left 0.4s ease-in-out;
-    -o-transition:  left 0.4s ease-in-out;
-    transition:  left 0.4s ease-in-out;
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
 }
 
-.cont.open-sidebar {
-    left: 240px;
+.slideout-panel {
+  position:relative;
+  z-index: 1;
+  will-change: transform;
 }
 
-#sidebar {
-	display: inline-block;
-    position: absolute;
-    left: -240px;
-    width: 240px;
-    height: 100%;
-    box-sizing: border-box;
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
 }
 
-#sidebar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#sidebar ul li {
-    margin: 0;
-}
-
-#sidebar ul li a {
-	background-color: #23c52e;
-    padding: 15px 20px;
-    font-size: 16px;
-    font-weight: 100;
-    color: white;
-    text-decoration: none;
-    display: block;
-    border-bottom: 1px solid green;
-    -webkit-transition:  background 0.3s ease-in-out;
-    -moz-transition:  background 0.3s ease-in-out;
-    -ms-transition:  background 0.3s ease-in-out;
-    -o-transition:  background 0.3s ease-in-out;
-    transition:  background 0.3s ease-in-out;
-}
-
-#sidebar ul li:hover a {
-    background-color: #23c550;
-}
-
-#sidebar-toggle {
-    background: #23c52e;
-    border-radius: 3px;
-    display: block;
-    position: relative;
-    padding: 10px 7px;
-    float: left;
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-#sidebar-toggle .bar{
-    display: block;
-    width: 18px;
-    margin-bottom: 3px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 1px;
-}
-
-#sidebar-toggle .bar:last-child{
-     margin-bottom: 0;
-     float: left;
+.slideout-open .slideout-menu {
+  display: block;
 }
 /*Menu*/
+
+
 
 /*Header*/
 header {
@@ -236,7 +191,7 @@ header ul a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #ffffff;
-	margin-left: 34px;
+	margin-right: 34px;
 	margin-top: 23px;
 	-moz-transition: all linear 0.5s;
 	-o-transition: all linear 0.5s;
@@ -298,6 +253,8 @@ header ul a:hover {
 }
 /*Header*/
 
+
+
 /*Features*/
 .features__item {
 	text-align: center;
@@ -337,6 +294,8 @@ header ul a:hover {
 }
 /*Features*/
 
+
+
 /*Introducing*/
 .introducing {
 	background-color: #f7f7f7;
@@ -348,6 +307,10 @@ header ul a:hover {
 }
 
 .introducing__img__mini {
+	display: none;
+}
+
+.introducing__img__minimini {
 	display: none;
 }
 
@@ -393,6 +356,8 @@ header ul a:hover {
 }
 /*Introducing*/
 
+
+
 /*Reviews*/
 .slider {
 	background-color: #4a3949;
@@ -424,6 +389,8 @@ header ul a:hover {
 	text-align: center;
 }
 /*Reviews*/
+
+
 
 /*Cuisines*/
 .cuisines__title {
@@ -517,6 +484,8 @@ header ul a:hover {
 }
 /*Cuisines*/
 
+
+
 /*Numbers*/
 .numbers__item {
 	text-align: center;
@@ -537,6 +506,8 @@ header ul a:hover {
 }
 /*Numbers*/
 
+
+
 /*Footer*/
 footer {
 	background-color: #f7f7f7;
@@ -553,13 +524,19 @@ footer {
 }
 /*Footer*/
 
+
+
 /*Width 1220px*/
 @media screen and (max-width: 1220px) {
 	.container {
 		width: auto;
 	}
 }
+/*Width 1220px*/
 
+
+
+/*Width 1020px*/
 @media screen and (max-width: 1020px) {
 	/*Introducing*/
 	.introducing__img {
@@ -583,9 +560,72 @@ footer {
 	}
 	/*Cuisines*/
 }
+/*Width 1020px*/
 
+
+
+/*Width 920px*/
+@media screen and (max-width: 920px) {
+	.introducing__app {
+		padding: 0;
+	}
+
+	.introducing__img__mini {
+		display: none;
+	}
+
+	.introducing__img__minimini {
+		display: inline-block;
+	}
+}
+/*Width 920px*/
+
+
+
+/*Width 840px*/
+@media screen and (max-width: 840px) {
+	.introducing .column6 {
+		width: 100%;
+	}
+
+	.introducing__iphone {
+		text-align: center;
+	}
+
+	.introducing__app {
+		text-align: center;
+	}
+
+	.introducing__app__title:after {
+		bottom: -5px;
+		left: 50%;
+		margin-left: -44px;
+	}
+	
+	.introducing__app__text {
+		width: 80%;
+	}
+
+	.introducing__app__download {
+		display: inline-block;
+		margin-bottom: 50px;
+	}
+}
+/*Width 840px*/
+
+
+/*Width 720px*/
+@media screen and (max-width: 720px) {
+	
+}
+/*Width 840px*/
+
+
+
+/*Width 400px*/
 @media screen and (max-width: 400px) {
 	.cuisines .column3 {
 		width: 100%;
 	}
 }
+/*Width 400px
