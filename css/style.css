@@ -636,7 +636,7 @@ footer {
 /*Width 840px*/
 
 
-/*Width 720px*/
+/*Width 768px*/
 @media screen and (max-width: 768px) {
 	header {
 		-webkit-background-size: auto;
@@ -685,7 +685,7 @@ footer {
 		width: 50%
 	}
 }
-/*Width 840px*/
+/*Width 768px*/
 
 
 
@@ -705,6 +705,7 @@ footer {
 @media screen and (max-width: 450px) {
 	.header__suptitle {
 		font-size: 32px;
+		margin-top: 80px;
 	}
 
 	.header__title {
