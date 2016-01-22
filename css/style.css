@@ -558,6 +558,15 @@ footer {
 	display: inline-block;
 	margin: 40px 0;
 }
+
+footer a {
+	text-decoration: none;
+	color: #c5c5c5;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
 /*Footer*/
 
 
